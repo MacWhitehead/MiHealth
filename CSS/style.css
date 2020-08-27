@@ -1,12 +1,19 @@
+.pageContent {
+  background-image: url(../images/brushed.png);
+}
+
 /* Add a white background color to the top navigation */
-.topnav {
+.navigation {
   background-color: white;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
+.navigation a {
   color: black;
   text-align: right;
   padding: 14px 16px;
@@ -15,12 +22,14 @@
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.navigation a:hover {
   background-color: green;
   color: black;
 }
 
-.topnav a miHealth {
-  font: 24px Impact bold;
+.navigation .miHealth {
+  font: 24px Arial bold;
   color: green;
+  background-image: linear-gradient (to left, red, green)
 }
+
