@@ -1,35 +1,137 @@
+body {
+    font-family: Arial, "Comic Sans", cursive;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0px;
+}
+
 .pageContent {
-  background-image: url(../images/brushed.png);
+    background-image: url(../images/brushed.png);
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 70px;
+    margin: 10px;
+    flex-direction: row;
+    position: relative;
 }
 
-/* Add a white background color to the top navigation */
+.pageContent a {
+    text-decoration: none;
+    color: black;
+}
+.description {
+    margin: 20px;
+    width: 25%;
+}
+.description a {
+    text-decoration: none;
+    color: black;
+    font: 14px black;
+    font-weight: bold;
+}
+h3 {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 500;
+}
 .navigation {
-  background-color: white;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin: auto;
-}
-
-/* Style the links inside the navigation bar */
-.navigation a {
-  color: black;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.navigation a:hover {
-  background-color: green;
-  color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    margin: 15px;
 }
 
 .navigation .miHealth {
-  font: 24px Arial bold;
-  color: green;
-  background-image: linear-gradient (to left, red, green)
+    flex: 8;
+    font-size: 30px;
+    font-weight: 900;
 }
 
+.navigation a {
+    color: black;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+
+.navigation a:hover,
+.description a:hover,
+.pageContent a:hover {
+    background-color: green;
+    color: black;
+}
+
+.pageContent img {
+    object-fit: cover;
+    width: 300px;
+    height: 450px;
+    margin: 40px;
+}
+
+.breakfast {
+    background-image: url("../images/apple-breakfast-quinoa-7.jpg");
+    width: 30%;
+    background-size: cover;
+    position: relative;
+}
+
+.lunch {
+    background-image: url("../images/pasta-salad-recipe-for-lunch.jpg");
+    width: 30%;
+    background-size: cover;
+    margin: 0 10px;
+    position: relative;
+}
+
+.dinner {
+    background-image: url("../images/dinner.jpg");
+    width: 30%;
+    background-size: cover;
+    position: relative;
+}
+
+.recipe-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    height: 450px;
+    ;
+}
+
+.recipe-row div {
+    flex-grow: 1;
+}
+
+.bottom-right-white {
+    background-color: white;
+    position: absolute;
+    top: 87%;
+    right: 0%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.bottom-right-green {
+    background-color: #8DC728;
+    position: absolute;
+    top: 93%;
+    right: 0%;
+    padding: 10px;
+    width: 90px;
+    text-align: end;
+    font-weight: bold;
+    font-size: 12px;
+}
